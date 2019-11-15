@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sc
+import scipy.linalg
 
 
 def print_grad_2D(grad_f, start_x = -1, end_x = 1, start_y = -1, end_y = 1, nbx = 10, nby = 10):

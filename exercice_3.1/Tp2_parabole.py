@@ -1,6 +1,7 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import scipy 
+import scipy as sc
+import matplotlib.pyplot as pyplot
+
 
 
 

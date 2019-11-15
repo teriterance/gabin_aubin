@@ -29,5 +29,17 @@ def exercice_3_1():
     print_contour_line( -5, 5, -5, 5, 100, 100)
     
 
+
+def exercice_3_2():
+    p_vrai = [np.sqrt(2), -1, 1]
+    t = np.array([i for i in range(-3,7)])
+    yv = p_vrai[0]*t**2 + p_vrai[1]*t + p_vrai[2]
+    y = np.round(yv)
+
+    ##calcul de l'estimation
+    M = np.vander(t, 3)
+    print(M)
+    p_est = np.linalg.lstsq(M, y)
+    print(p_est)
 if __name__ == "__main__":
-    exercice_3_1()
+    exercice_3_2()
